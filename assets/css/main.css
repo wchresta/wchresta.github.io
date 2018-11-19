@@ -197,9 +197,9 @@ input, select, textarea {
 			a.special:not(.button):before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: 'Font Awesome 5 Free';
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 900;
 				text-transform: none !important;
 			}
 
@@ -2276,9 +2276,9 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: 'Font Awesome 5 Free';
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 900;
 				text-transform: none !important;
 			}
 
@@ -2371,9 +2371,9 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'Font Awesome 5 Free';
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 900;
 			text-transform: none !important;
 		}
 
@@ -2643,12 +2643,21 @@ input, select, textarea {
 			position: relative;
 		}
 
-			ul.contact li:before {
+			ul.contact li.awesome-brand:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: 'Font Awesome 5 Brands';
 				font-style: normal;
 				font-weight: normal;
+				text-transform: none !important;
+			}
+
+            ul.contact li:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: 'Font Awesome 5 Free';
+				font-style: normal;
+				font-weight: 900;
 				text-transform: none !important;
 			}
 
@@ -3109,9 +3118,9 @@ input, select, textarea {
 					#header nav a[href="#menu"]:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
-						font-family: FontAwesome;
+						font-family: 'Font Awesome 5 Free';
 						font-style: normal;
-						font-weight: normal;
+						font-weight: 900;
 						text-transform: none !important;
 					}
 

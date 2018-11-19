@@ -7,17 +7,26 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+    match "assets/fonts/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "assets/js/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "assets/css/*" $ do
+        route   idRoute
+        compile compressCssCompiler
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
-        route   idRoute
-        compile compressCssCompiler
-
     match (fromList ["about.rst", "contact.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/wrapper.html" defaultContext
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
