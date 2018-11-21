@@ -3,7 +3,6 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 
-
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
@@ -69,6 +68,13 @@ main = hakyll $ do
     match "templates/*" $ compile templateCompiler
 
 
+    -- Create redirects for renamed articles
+        {-
+    version "redirects" $ createRedirects
+        [( "posts/2018-11-19-fear-of-maintenance-spiral.html"
+         , "/posts/2018-11-19-maintenance-spiral-of-fear.html")
+        ]
+    -}
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
